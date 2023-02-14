@@ -3,11 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>GTM in iframe</title>
+    <script>
+        window.ChooseWidgetOptions = {
+            placement: '#id-to-widget-render-place',
+        };
+    </script>
+    <script src="https://chooose-widget-parent.vercel.app/chooosewidget.js"></script>
 </head>
 <body>
     <div>
         <h1>Let's try gtm in iframe</h1>
-        <iframe src="https://southwest-test.chooose.today/southwest-offset-embed/" width="1000px" height="750px"></iframe>
+        <div id="id-to-widget-render-place"></div>
     </div>
 </body>
 </html>
